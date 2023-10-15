@@ -41,7 +41,8 @@ function updateCity(event) {
               "hh : mm : ss"
             )} <small> ${cityTime.format("A")}</small></div>
           </div>
-        </div>`;
+        </div>
+        <a href="/">All Cities</a>`;
 }
 
 let citySelect = document.querySelector("#city");
