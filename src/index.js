@@ -17,6 +17,15 @@ function displayCities() {
       "hh : mm : ss [<small>]a[</small>]"
     );
   }
+  let newyorkElement = document.querySelector("#newyork-date");
+  if (newyorkElement) {
+    let newyorkTimeElement = document.querySelector("#newyork-time");
+    let newyork_moment = moment().tz("America/New_York");
+    newyorkElement.innerHTML = newyork_moment.format("MMMM Do YYYY");
+    newyorkTimeElement.innerHTML = newyork_moment.format(
+      "hh : mm : ss [<small>]a[</small>]"
+    );
+  }
 }
 
 setInterval(displayCities, 1000);
