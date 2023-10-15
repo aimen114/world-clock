@@ -18,19 +18,34 @@
     <div class="container">
       <h1>World Clock</h1>
 
-      <select name="" id="cities">
+      <select id="city">
         <option value="">Select a city...</option>
-        <option value="vancouver">Vancouver</option>
-        <option value="riyadh">Riyadh</option>
-        <option value="tokyo">Tokyo</option>
+        <option value="America/Vancouver">Vancouver</option>
+        <option value="Asia/Riyadh">Riyadh</option>
+        <option value="Asia/Tokyo">Tokyo</option>
       </select>
-      <div class="row">
-        <div class="col">
-          <h2>Vancouver</h2>
-          <div class="date" id="v-date">August 15th 2022</div>
+      <div id="cities">
+        <div class="row">
+          <div class="col">
+            <h2>Halifax</h2>
+            <div class="date" id="halifax-date">August 15th 2022</div>
+          </div>
+          <div class="col text-end">
+            <div class="time" id="halifax-time">
+              1 : 48 : 15 <small> AM</small>
+            </div>
+          </div>
         </div>
-        <div class="col text-end">
-          <div class="time" id="v-time">1 : 48 : 15 <small> AM</small></div>
+        <div class="row">
+          <div class="col">
+            <h2>Winnipeg</h2>
+            <div class="date" id="winnipeg-date">August 15th 2022</div>
+          </div>
+          <div class="col text-end">
+            <div class="time" id="winnipeg-time">
+              1 : 48 : 15 <small> AM</small>
+            </div>
+          </div>
         </div>
       </div>
     </div>
